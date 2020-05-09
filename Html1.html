@@ -1,40 +1,77 @@
-<!--
-1.What is Html
-Html = Hypertext Markup Language
-Html은 우리가 보는 웹페이지가 어떻게 구조화 되어있는지
-브라우저로 하여금 알 수 있또록 하는 마크업 언어이다.
+1.Recap[HTML 기본구조]
 
-My cat is howl을 있는 그대로 표현하고 싶다면
-태그 중 <p>My cat is howl</p>로 명시하면 된다.
-참고로 HTML은 대문자 소문자를 따지지 않음.
-"<P>My cat is howl</P>" 전체를 Element라 하고
-텍스트를 content 양 옆의 태그를 각각 Opening,Closing tag라고 한다.
-ex)
-<em>I LOVE IT</em> 은 이탤릭강조효과를 줌
+ps: link: <a href="" title="" target=_blank>
 
-2.Nesting Elements(포함된요소)
-My cat is very strong에서 
-very를 강조하고 싶다면 <strong></strong> tag를 이용하여
-중첩 강조 시킬 수 있다.
-ex)
-<p>My cat is <strong>very</strong> strong</p>
+ex1)
 
-3.Block level Element vs Inline Element
--Block level Element:
-일반적으로 페이지의 구조적 요소 나타낼 시 사용, 인라인 요소와 중첩 불가
-ex) Paragraph, lists, Navigation menu, Footers
--Inline Element
-항상 블록레밸 요소 내 포함 되어 있음 문장 단어 같은 작은부분에 적용
-ex) <a></a>[하이퍼링크 정의요소], <em></em>, <strong></strong>
+<!DOCTYPE html>
 
-4.Attributes(속성)
-ex)<p class = "lovelyhun">My cat is howl</p>
-여기서 class = "lovelyhun"을 Attribute라 한다.
-속성 표현시 ""감싸는 것 기억하기.
+<html>
 
-5.Link
-<a></a>
-텍스트를 감싸서 하이퍼 링크로 만드는역할
-ex) target=_blank 는 새로운 탭에서 링크 보여줌, 설정한 title은 마우스 올리면 뜨는 문구
-<p>A link to my <a href="www.naver.com" title ="naver" target=_blank>favorite website.</a></p>
--->
+  <head> 
+
+    <meta charset="utf-8">
+
+    <body>
+
+      <p>I hope to be good at programming ASAP</p>
+
+    </body>
+
+  </head>
+
+</html>
+
+ 
+
+2. Head
+
+Head의 내용은 사이트에 나타나지 않으며 하는 일은 페이지에 대한 Metadata를 포함하는 일이다.
+
+*Metadata: 데이터의 정보를 나타내는 데이터 ex)<base>,<link>,<script>,<style>,<title> etc..
+
+  ex)<meta charset: utf-8 은 전 세계적인 Character 집합으로 많은 언어들을 사용할 수 있다고 보면됨.
+
+      다른 브라우저에 있을 잠재적인 문제를 피하기 위하여 설정하는 것이 좋음.
+
+      3. 제목달기
+
+<head>내의 <title>은  Html 문서 전체의 타이틀을 표현하기 위한 메타데이터이다.
+
+<body>내의 <h1>이  화면내의 제목을 나타내는 것이라고 일반적으로 생각하면 된다.
+
+ 
+
+4.Meta data의 사용
+
+<meta name="twitter:title" content="Mozilla Developer Network">
+
+와 같이 name은 제목 content는 그 내용이라고 보면 되며 특정웹사이트의 url표현에 유용하다고 생각하면 된다.
+
+ 
+
+5.Html에 Css와 Java Script 적용하기
+
+현대의 모든 웹사이트는 상호작용 기능이 많은 영상플레이어,지도,게임등을 위해 Javascript가 필요하고
+
+이것들을 더 멋져보이게 하기위해 Css가 사용된다고 한다. 이것들은 <link>와 <script>를 사용하여 적용된다.(일반적으로)
+
+ex1)
+
+링크는 항상 <head>부분에 위치한다.
+
+<link rel="stylesheet" href="my-css-file.css">
+
+rel="stylesheet"로 문서의 스타일 시트임을 나타냄과 동시에 href=""로 경로를 나타내어준다
+
+ 
+
+ex2)
+
+script는 head에 들어갈 필요가 없으며 </body>태그 바로 앞 문서 본문의 맨 끝에 넣는 것이 좋다.
+
+액세스 과정에서 JVS가 아직 존재하지 않는 요소라 생각하며 에러가 날 수도 있기 때문이다.
+
+<script src="my-js-file.js"></script>
+
+ 

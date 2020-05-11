@@ -1,42 +1,71 @@
-1. Semantic
+Hyper link
 
-Html에서 기본적으로 맥락, 단락의 구분을 위해 사용하는 방식들이 많다
+1.Hyper link
+우리가 원하는 다른 resource들과 연결해주는 방식
+tip.URL은 html, text, image, video, audio 등 웹상에 존재하는 어느것이든
+연결 할 수 있다.
+* URL= Uniform Resource Locator
+ex) BBC Website
 
-가령 <h1></h1>~<h6></h6>의 설정 또는 <em></em> 등은 CSS나  JVS를 통해서 훨씬 더 멋드러지게 꾸밀 수 있으나 코드를 읽는 사람 또는 원론적으로 위의 기능을 사용하지 않고 보는 사람들에게 의미 전달을 위해 크기의 조절을 통해 문장의 강세를 나타 낼 수도 있다.
+2.link structure
 
- 
+ex)
+<p>I'm creating link to
+    <a href="https://www.naver.com">The naver</a>.
+</p>
 
-ex1) 
+3.Plus title
+ex)
+<p>This is
+    <a href="https://programmingwihtclothes.tistory.com/" title= "Best blog" target=_blank>
+        my blog
+    </a>
+</p>
+4. Put pictures
+ex)
+<a href= "https://programmingwihtclothes.tistory.com/">
+    <img src = "mozilla-image.png" alt=" mozilla logo sth">
+</a>
 
-<p></p>: paragraph로 단락을 나눠 준다. [html에서 그냥 글 작성하면 연속으로 계속 나오므로 구분을 위해 태그를 써줘야함.
+3.URL & Path
 
-<h1~h6></h1~h6>:1부터 6순으로 작아짐. 글자 크기
+1)같은 디렉토리(폴더): 동일 폴더내의 파일 지정시 그냥 파일명만 링크하면됨.
+ex)
+<p>Want to contact a specific staff member?
+    Find details on our <a href="contacts.html">contacts page</a>.</p>
+2)하위 디렉토리(폴더)로 이동: 폴더내의 폴더에 있는 파일 사용 필요시.
+ex) 하위 폴더명 다음 (/) 다음 파일명 
+<p>Visit my<a href="project/index.html">project hompge</a></p>.
+3)상위(부모)디렉토리(폴더)로 이동: 폴더 밖의 다른 폴더의 파일 사용 시.
+ex) .. 다른 파일명 / 해당파일명 을 써주면 됨
+<p>A link to my<a href="../pdfs/project-brief.pdf">project brief</a></p>
 
-<em></em>: emphasizng, 강조용
+4.문서조각
 
-<strong></strong>: strong, 강한 강조용
+문서상단이 아닌 HTML문서 내부 특정부분에 링크 필요 시 id 속성 기입 후 연결 하면 됨
+ex)
+<h2 id="lee">lalala</h2>
+<p>Want to link with <a href="sth.html#lee">hun</a></p>
+ex2)문서조각 단독사용으로 문서 다른부분에 연결 가능
+<p>The <a href="#lee">link</a></p>
 
- 
+5. 동영상, 사진 등 비 HTML 리소스 연결 시
+ex)예기치 못한 오류를 위해 용량 등을 표시해줄 필요가 있음
+<p><a href="http://www.example.com/large-report.pdf">
+    Download the sales report (PDF, 10MB)
+  </a></p>
+  
+  <p><a href="http://www.example.com/video-stream/">
+    Watch the video (stream opens in separate tab, HD quality)
+  </a></p>
+  
+  <p><a href="http://www.example.com/car-game">
+    Play the car game (requires Flash)
+  </a></p>
 
-2.List
-
-list로는 <ul></ul> <ol></ol>가 있음 , 아래와 같이 사용하면 됨
-
-1)Unordered list( 순서없이 점으로 나타남)
-
-<ul>
-<li>milk</li>
-<li>eggs</li>
-<li>bread</li>
-<li>hummus</li>
-</ul>
-
-2) Ordererd list(1,2,3..순서가 나타나는 list)
-
-<ol>
-<li>Drive to the end of the road</li>
-<li>Turn right</li>
-<li>Go straight across the first two roundabouts</li>
-<li>Turn left at the third roundabout</li>
-<li>The school is on your right, 300 meters up the road</li>
-</ol>
+  5.1다운로드 연결 시
+  ex_ 다운로드 속성을 사용하여 기본 저장 파일 이름 제공 가능[donwload="sth"]
+  <a href="https://download.mozilla.org/?product=firefox-39.0-SSL&os=win&lang=en-US"
+   download="firefox-39-installer.exe">
+  Download Firefox 39 for Windows
+</a>

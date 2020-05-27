@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <header id=address>
+    <p class=address>
         <strong>Dr.Eleanor Gaye</strong><br><!-- strong 쓰는 거 몰랐엇음-->
         Awesome Science faculty<br>
         University of Awesome<br>
@@ -17,14 +17,15 @@
         <strong>Tel</strong>: 123-456 -7890
         <em>Email</em>:no_reply@example.com
         20 January 2020
-    </header>
+    </p>
+    <p class= address>
+        <em>Miss Eileen Dover</em><br>
+        4321 Cliff Tod Edge<br>
+        Dover, CT9 XXX<br>
+        UK<br>
+    </p>
+    
     <main>
-        <span id=Name>
-            <em>Miss Eileen Dover</em><br>
-            4321 Cliff Tod Edge<br>
-            Dover, CT9 XXX<br>
-            UK<br>
-        </span>
         <h4>
             Re: Eileen Dover university application
         </h4>

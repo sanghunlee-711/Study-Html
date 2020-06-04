@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'utf-8'>
+        <style>
+            html{border: 9px solid gray;}
+            div{
+                border: 5px solid tomato;
+                margin: 10px;
+            }
+            #me{
+                position: relative;
+                 /*static을하면 위치와 관련된 설정을 하지 않은 것.
+                 / relative는 상대적으로 움직이게함. 예제와 같이 움직이려면 써야한다.*/
+                left:100px; /*offset이라고함*/
+                right:100px;/*left와 right가 나오면 left우선 bottom 과 top나오면 top 우선*/
+                top:100px;
+                bottom:100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="order">other</div>
+        <div id="parent">
+            parent
+            <div id ='me'>me</me>
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset='utf-8'>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <label class="req" for="uname">이름</label>
+    <input type="text" id="uname" autofocus>
+
+    <label calss="req" for="uid">학번</label>
+    <input type="text" id="uid" placeholder="하이픈없이 입력">
+    <hr>
+    <label class="req" for="subi">영어회화(초급)</label>
+    <input type="text" id="subj" value="오전9:00~11:00" readonly>
+    <!--readonly로 입력할 수 없음.-->
+    <hr>
+    <label class="req" for="uname">이름</label>
+    <input type="text" id="uname" autofocus required>
+    <hr>
+    <select id="class">
+        <optgroup label="공과대학">
+            <option value="archi">건축공학과</option>
+            <option value="mechanic">기계공학과</option>
+            <option value="indust">산업공학과</option>
+            <option value="environmental">환경공학과</option>
+        </optgroup>
+        <optgroup label="인문대학">
+            <option value="history">사학과</option>
+            <option value="lang">어문학부</option>
+            <option value="philo">철학</option>
+        </optgroup>
+    </select>
+    <hr>
+    <input type="text" id="interest" list="choices">
+    <datalist id="choices">
+        <!--input아이디값과 같은거 알쥬 ?-->
+        <option value="grammar" label="문법"></option>
+        <option value="listening"" label = " 듣기"></option>
+        <option value="speaking" label="말하기"></option>
+        <option value="news" label="뉴스청취"></option>
+    </datalist>
+    <hr>
+    <label>10초남음</label>
+    <progress value = "50" max ="60"></progress>
+    <label>진행률 30%</label>
+    <prgress value ="30" max = "100"></prgress>
+    <hr>
+    <label>점유율 0.8</label>
+    <meter value = "0.8"></meter>
+    <label>사용량 64%</label>
+    <meter min = "0" max = "100"  value ="64"></meter>
+    <label>트래픽초과</label>
+    <meter min ="1024" max ="10240" low ="2048" high ="9126" value = "9216"></meter>
+    <lable>적절한 트래픽</lable>
+    <meter value ="0.5" optimum = "0.8"></meter>
+</body>
+<footer>
+
+</footer>
+
+</html>

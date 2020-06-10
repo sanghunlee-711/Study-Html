@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+        p {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 18px;
+        }
+
+        span {
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        h1 {
+            color: purple;
+        }
+
+        h2 {
+            color: rgb(300, 100, 200);
+            /*rgb값 사용*/
+        }
+
+        .color_check {
+            color: #47316e;
+            /*#ff0000 16진수 사용*/
+        }
+
+        a {
+            text-decoration: none;
+            /*밑줄없앰*/
+            color: rgb(300, 100, 200);
+
+        }
+
+        #edited {
+            text-decoration: line-through;
+        }
+
+        /*취소선*/
+
+        #shadow {
+            text-shadow: 5px 5px -5px;
+        }
+
+        p {
+            white-space: pre-wrap;
+            /*자동줄바꿈*/
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit <span>amet consectetur adipisicing</span> elit. Mollitia ducimus, totam, aliquid aspernatur
+        nam nostrum
+        blanditiis tenetur veritatis necessitatibus, aut atque. Vero ex accusantium voluptatum dolorum soluta provident,
+        nihil saepe.</p>
+
+    <hr>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam, </h1>
+    <h2>Second Title</h2>
+    <p class="color_check">fugiat excepturi, quibusdam molestiae, harum numquam in perspiciatis </p>
+    <p class="color_check">nesciunt minus quidem repudiandae? Laboriosam quidem amet laborum, rem ipsa vitae? Libero.
+    </p>
+
+    <hr>
+    <p>Lorem ipsum dolor <a href="https://www.naver.com">sit amet</a> consectetur adipisicing elit. Soluta deleniti odio
+        quae molestias quis adipisci
+        voluptates <span id="edited">reiciendis magnam</span> similique doloribus vitae tempore dignissimos molestiae
+        iure ad, consectetur facere
+        minima. Vitae.</p>
+    <hr>
+    <h3 id="shadow">HTML Shadow1</h3>
+    <h1>HTML Shadow2</h1>
+    <h1>HTML Shadow3</h1>
+</body>
+<footer>
+
+</footer>
+
+</html>

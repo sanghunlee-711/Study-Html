@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head lang='eng'>
+    <meta charset='utf-8'>
+    <style>
+        h2.bluetext {
+            /*h2중 bluetext class만 적용*/
+            color: blue;
+            /*글자색*/
+        }
+
+        .redtext {
+            color: red;
+            /*글자색*/
+        }
+
+        p {
+            font-size: 12px;
+            /*글자크기*/
+            margin-left: 20px;
+            /*왼쪽마진여백*/
+        }
+
+        #container {
+            background-color: purple;
+            /*배경색*/
+            width: 40px;
+            /*너비*/
+            height: 60px;
+            /*높이*/
+            margin: 0 auto;
+            /*가로로 중앙에 배치*/
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            /*그룹선택자*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>블루베리에 관한 연구</h1>
+    <h2 class="bluetext">블루베리와 항산화 효능</h2>
+    <p class="bluetext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repudiandae nostrum numquam
+        neque sit, </p>
+    <p>ullam modi nisi voluptatem <sapn id="redtext">accusamus deserunt,</sapn> hic et, tempora consequuntur voluptas.
+        Quod, quis aliquid. Saepe, illo.</p>
+    <h2>블루베리와 노화</h2>
+    <p><span class="redtext">ullam modi nisi voluptatem accusamus deserunt,</span> hic et, tempora consequuntur
+        voluptas. Quod, quis aliquid. Saepe, illo.</p>
+    <hr>
+
+    <div id="container"></div>
+
+</body>
+<footer>
+
+</footer>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <style>
+        .indent1 {
+            text-indent: 15px; /*15px만큼 들여쓰기 */
+        }
+        .indent2{
+            text-indent: 5px;
+        }
+        .small-line{
+            line-height: 0.7; /*글자크기 0.7배의 줄간격*/
+        }
+        .bi{
+            line-height: 10;
+        }
+        .list{
+            list-style-type: none; /*앞에 불리안(동그라미) 표시가 사라진다*/
+        }
+        ol{
+            list-style-type: upper-roman; /*대문자 로마알파벳자로 표시가 됨*/
+        }
+        .position{
+            list-style-position: inside;
+        } /*좀더 안으로 들여쓰기가 됨.*/
+    </style>
+</head>
+
+<body>
+    <p>블루베리는 비타민 A</p>
+    <p class="indent1">블루베리는 비타민 A</p>
+    <p class="indent2">블루베리는 비타민 A</p>
+    <hr>
+    <p class="small-line">블루베리는 비타민 A</p>
+    <p class="bi">블루베리는 비타민 A</p>
+
+    <hr>
+
+    <ul class = "list">
+        <li>DO IT SEREIES</li>
+        <li>된다시리즈</li>
+        <li>DO SEREIES</li>
+    </ul>
+    <ol>
+        <li>DO IT SEREIES</li>
+        <li>된다시리즈</li>
+        <li>DO SEREIES</li>
+    </ol>
+
+    <ul class = "position">
+        <li>DO IT SEREIES</li>
+        <li>된다시리즈</li>
+        <li>DO SEREIES</li>
+    </ul>
+
+</body>
+<footer>
+
+</footer>
+
+</html>
